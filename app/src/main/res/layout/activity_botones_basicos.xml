@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.milton.trabajo_androidlp3.BotonesBasicos">
+
+    <Button android:id="@+id/BtnBotonSimple"
+        android:text="click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Botones Personalizados ON "
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton android:id="@+id/BtnToggle"
+        android:textOn="on"
+        android:textOff="off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:textOn="on"
+        android:textOff="off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnToggle"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/BtnToggle" />
+
+    <ImageButton android:id="@+id/BtnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="icono_ok"
+        android:src="@drawable/ic_estrella"
+        android:layout_below="@+id/switch1"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="icono_ok"
+        android:src="@drawable/ic_estrella"
+        android:paddingRight="40dp"
+        android:layout_below="@+id/BtnBotonSimple"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/BtnBotonSimple" />
+
+    <ToggleButton android:id="@+id/BtnPersonalizado"
+        android:textOn="on"
+        android:textOff="off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_style"
+        android:layout_below="@+id/BtnImagen"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="15dp"
+        android:text="Click"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_marginBottom="17dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="icono_ok"
+        android:src="@drawable/ic_estrella"
+        android:layout_below="@+id/BtnPersonalizado"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Texto prueba"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageButton2" />
+
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle">
+
+        <Button android:id="@+id/BtnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aceptar"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button android:id="@+id/BtnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+</RelativeLayout>
